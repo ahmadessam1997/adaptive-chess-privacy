@@ -1,45 +1,232 @@
-Privacy Policy — Adaptive Chess
-Last updated: 25 July 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adaptive Chess — Privacy Policy</title>
+  <style>
+    body { max-width: 720px; margin: 40px auto; padding: 0 20px;
+           font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+           line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 32px; }
+    .muted { color: #666; font-size: 14px; }
+    code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left;
+             font-size: 15px; vertical-align: top; }
+    th { background: #f7f7f7; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Adaptive Chess</h1>
+  <p class="muted">Last updated: 2 October 2026 (applies from version 1.1.0)</p>
 
-Adaptive Chess ("the app", package com.ahmadessam.adaptivechess) is developed by Ahmad Essam. This policy explains what data the app handles.
+  <p>
+    Adaptive Chess ("the app", package
+    <code>com.ahmadessam.adaptivechess</code>) is developed by Ahmad Essam.
+    This policy explains what data the app handles.
+  </p>
 
-Playing offline against the computer requires no account and sends nothing off your device. Data is only collected if you choose to sign in and use online multiplayer.
+  <p>
+    You can play without an account. Since version 1.1.0 the app shows
+    advertising and measures how it is used, which means some data is sent to
+    Google even if you never sign in. The sections below list exactly what.
+  </p>
 
-Data we collect
-If you play offline only
-None. No account is required, and no gameplay data leaves your device. There is no analytics, advertising, or tracking SDK in the app.
+  <h2>Data collected for everyone who uses the app</h2>
 
-If you create an account or sign in with Google
-Data	Why	Where it goes
-Google account ID, name and email address	To identify you when you sign in with Google	Stored on your device only
-Username	Shown to opponents and on the leaderboard	Sent to our game server
-Chess rating and game results	Matchmaking and leaderboard ranking	Stored on our game server
-Moves played in an online game	Relayed to your opponent so the game can be played	Passed through our game server, not retained after the game
-IP address	Inherent to making a network connection; used for abuse prevention	Processed by our server and hosting provider
-Your email address is not sent to our game server and is not shared with other players. Other players only ever see your username, rating and chosen piece skin.
+  <h3>Advertising (Google AdMob)</h3>
+  <p>
+    The app shows ads through Google AdMob: a banner on the main menu, an
+    occasional full-screen ad between games, and optional rewarded ads that
+    you start yourself (to play one Coach Mode game, review a game or try a
+    skin for one game). To deliver and measure ads, Google's advertising SDK
+    collects and sends to Google:
+  </p>
+  <ul>
+    <li>your device's <strong>advertising ID</strong>;</li>
+    <li>your <strong>IP address</strong>, from which an approximate location
+      (country / region / city) is derived;</li>
+    <li>device and app information (model, operating system version, language,
+      app version) and diagnostic data about ad delivery;</li>
+    <li>which ads you were shown and whether you interacted with them.</li>
+  </ul>
+  <p>
+    Google may use this to show personalised ads, where the law and your
+    choices allow it. See
+    <a href="https://policies.google.com/technologies/partner-sites">How Google
+    uses information from apps that use its services</a>.
+  </p>
+  <p>
+    <strong>Consent.</strong> In the European Economic Area, the United Kingdom,
+    Switzerland and other regions where it is required, the app asks for your
+    consent with Google's consent form before any ad is requested. You can
+    change your choice at any time from <em>Settings → Ad privacy choices</em>
+    in the app (the entry is shown where a choice applies).
+  </p>
+  <p>
+    <strong>Your controls.</strong> You can reset or delete your advertising ID
+    in Android under <em>Settings → Privacy → Ads</em>. Buying
+    <em>Remove Ads</em> or holding an active Neural Coach subscription turns
+    off the banner and the between-game ads; the advertising SDK stays in the
+    app so that the optional rewarded ads keep working, and it may still
+    contact Google to prepare them.
+  </p>
 
-Data stored on your device
-The app saves gameplay data locally using standard on-device storage: your player rating, game settings, selected board/skin, which optional items you own, and (if you signed in) your account details. This is removed when you uninstall the app.
+  <h3>Analytics (Google Analytics for Firebase)</h3>
+  <p>
+    To understand how the game is used and to improve it, the app sends usage
+    events to Google Analytics for Firebase. The events are: first open and
+    session information; menu choices; game start and end (mode, level,
+    result, number of moves, duration); daily-puzzle start and result
+    (including your streak length); opening the store or the subscription
+    screen; purchase started / completed (product name only); ads shown and
+    rewarded ads completed; the rating prompt; online matchmaking; and sign-in
+    completed (method only). Along with them the Firebase SDK collects an
+    app-instance ID, the advertising ID, device and operating-system
+    information, and your approximate location (country level, from the IP
+    address). These events do not contain your name, email address, username
+    or the moves you play. See
+    <a href="https://firebase.google.com/support/privacy">Privacy and Security
+    in Firebase</a>.
+  </p>
 
-Who we share data with
-We do not sell your data or share it with advertisers. Data is processed only by the services needed to run the app:
+  <h2>Data collected only if you sign in and play online</h2>
+  <p>
+    An account is optional. It is asked for only when you open Online Play or
+    start a Neural Coach subscription.
+  </p>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+    <tr>
+      <td>Google account ID, name and email address</td>
+      <td>To identify you when you sign in with Google</td>
+      <td>Stored on your device only</td>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td>Shown to opponents and on the leaderboard</td>
+      <td>Sent to our game server</td>
+    </tr>
+    <tr>
+      <td>Chess rating and game results</td>
+      <td>Matchmaking and leaderboard ranking</td>
+      <td>Stored on our game server</td>
+    </tr>
+    <tr>
+      <td>Moves played in an online game</td>
+      <td>Relayed to your opponent so the game can be played</td>
+      <td>Passed through our game server, not retained after the game</td>
+    </tr>
+    <tr>
+      <td>IP address</td>
+      <td>Inherent to making a network connection; used for abuse prevention</td>
+      <td>Processed by our server and hosting provider</td>
+    </tr>
+  </table>
 
-Google Play — processes purchases and, if you use it, Google Sign-In. See Google's Privacy Policy.
-Fly.io — hosts our online game server. See Fly.io's Privacy Policy.
-How long we keep it
-Your username and rating are kept on the game server while your account is active, so your ranking persists between sessions. Game moves are relayed in real time and are not stored after a game ends. Server connection logs are retained for a short period for abuse prevention.
+  <p>
+    Your email address is <strong>not</strong> sent to our game server and is
+    not shared with other players. Other players only ever see your username,
+    rating and chosen piece skin. A practice match against the bot, offered
+    when no online opponent is found, is played entirely on your device:
+    nothing about it is sent to the game server and it does not change your
+    online rating.
+  </p>
 
-Deleting your account and data
-You can sign out and delete your local account at any time from Settings → Account in the app. To have your username and rating permanently erased from our game server, email ahmadessam1997@gmail.com from the address associated with your account and we will delete them within 30 days. Uninstalling the app removes all locally stored data.
+  <h2>Data stored on your device</h2>
+  <p>
+    The app saves gameplay data locally using standard on-device storage:
+    your player rating, game settings, selected board/skin, which optional
+    items you own, your daily-puzzle results and streak, counters used to
+    decide when an ad or the rating prompt may appear, your reminder
+    preference, and (if you signed in) your account details. If you create
+    an account with a username and password instead of Google, the password is
+    kept only on your device, in scrambled (hashed) form, and is never sent to
+    us. All of this is removed when you uninstall the app.
+  </p>
 
-Purchases
-Optional in-app purchases (the Neural Coach subscription and cosmetic skins) are processed by Google Play. We do not receive or store your payment details; those are handled entirely by Google.
+  <h2>Notifications</h2>
+  <p>
+    After you solve your first daily puzzle the app offers a daily reminder.
+    If you accept, Android asks for permission to show notifications. The
+    reminders are scheduled <strong>on your device</strong>; the app does not
+    use a push-notification service and no notification token or identifier is
+    sent to us or to anyone else. You can turn the reminder off in the app's
+    Settings or in Android's notification settings.
+  </p>
 
-Children
-The app is rated for everyone. We do not knowingly collect personal data from children under 13. Online play and sign-in are optional; if you believe a child has created an account, contact us and we will delete it.
+  <h2>Who we share data with</h2>
+  <p>
+    We do not sell your data. Data is shared with, or processed by, only the
+    services needed to run and fund the app:
+  </p>
+  <ul>
+    <li><strong>Google AdMob</strong> — advertising (advertising ID, IP address /
+      approximate location, device information, ad interactions). See
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>Google Analytics for Firebase</strong> — usage analytics
+      (app-instance ID, advertising ID, usage events, device information).</li>
+    <li><strong>Google Play</strong> — processes purchases and, if you use it,
+      Google Sign-In.</li>
+    <li><strong>Fly.io</strong> — hosts our online game server. See
+      <a href="https://fly.io/legal/privacy-policy/">Fly.io's Privacy Policy</a>.</li>
+  </ul>
 
-Changes
-If a future version changes what data is collected, this policy and the app's Play Store data-safety section will be updated before that version is released.
+  <h2>How long we keep it</h2>
+  <p>
+    Your username and rating are kept on the game server while your account is
+    active, so your ranking persists between sessions. Game moves are relayed
+    in real time and are not stored after a game ends. Server connection logs
+    are retained for a short period for abuse prevention. Advertising and
+    analytics data is held by Google under its own retention rules; analytics
+    events are kept for 2 to 14 months depending on our Google Analytics setting and are then deleted
+    automatically.
+  </p>
 
-Contact
-Questions about this policy: ahmadessam1997@gmail.com.
+  <!-- id is referenced by the Play Console "account deletion URL" field -->
+  <h2 id="delete-account">Deleting your account and data</h2>
+  <p>
+    You can sign out and delete your local account at any time from
+    <em>Settings → Account</em> in the app. To have your username and rating
+    permanently erased from our game server, email
+    <a href="mailto:ahmadessam1997@gmail.com">ahmadessam1997@gmail.com</a>
+    from the address associated with your account and we will delete them
+    within 30 days. Uninstalling the app removes all locally stored data.
+    Resetting or deleting your advertising ID in Android's settings separates
+    future advertising and analytics data from what was collected before.
+    Analytics events are not linked to your name, email address or username;
+    they expire automatically as described above, and you can email us at the
+    same address to ask for earlier deletion of whatever can be matched to
+    your installation.
+  </p>
+
+  <h2>Purchases</h2>
+  <p>
+    Optional in-app purchases (the Neural Coach subscription, Remove Ads and
+    cosmetic skins) are processed by Google Play. We do not receive or store
+    your payment details; those are handled entirely by Google.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    The app is not directed at children under 13, and we do not knowingly
+    collect personal data from them. Online play and sign-in are optional; if
+    you believe a child has created an account, contact us and we will delete
+    it.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If a future version changes what data is collected, this policy and the
+    app's Play Store data-safety section will be updated before that version
+    is released.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: <a href="mailto:ahmadessam1997@gmail.com">
+    ahmadessam1997@gmail.com</a>.
+  </p>
+</body>
+</html>
