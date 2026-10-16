@@ -24,15 +24,28 @@
   <h1>Delete your Adaptive Chess account</h1>
   <p class="muted">
     Adaptive Chess: Neural Coach (<code>com.ahmadessam.adaptivechess</code>),
-    developed by Ahmad Essam. Last updated: 2 October 2026.
+    developed by Ahmad Essam. Effective from 2 October 2026. Last updated:
+    15 October 2026.
   </p>
 
   <p>
     This page explains how to delete your Adaptive Chess account and the data
-    associated with it.
+    associated with it. It applies to both the Android version (Google Play)
+    and the iPhone version (App Store).
   </p>
 
-  <h2>How to request account deletion</h2>
+  <h2>Delete your account in the app</h2>
+  <p>
+    The quickest way, on both Android and iPhone, is in the app:
+    <strong>Settings → Account → Delete account</strong>. Since 15 October
+    2026 this removes the account from your device <strong>and</strong> asks
+    our game server to delete your username and rating from the public
+    leaderboard, with no email needed. If the server cannot be reached at that
+    moment, the local deletion still completes and the app tells you; in that
+    case send the email request below so we can remove your leaderboard entry.
+  </p>
+
+  <h2>How to request account deletion by email</h2>
   <ol>
     <li>
       Send an email to
@@ -43,7 +56,9 @@
     <li>
       Include the <strong>username</strong> you play under, so the account can
       be identified. If you signed in with Google, send the email from that
-      same Google address.
+      same Google address. If you signed in with Apple on iPhone, send it from
+      the email address you used with Apple (if you chose "Hide My Email",
+      please also tell us the username, since we never see your real address).
     </li>
     <li>
       You will receive confirmation once the account has been deleted. Requests
@@ -53,8 +68,8 @@
 
   <div class="box">
     <strong>To delete everything held on your device instead</strong>, open the
-    app and go to <strong>Settings → Account → Sign out</strong>, then uninstall
-    the app. Uninstalling removes all locally stored data, including your
+    app and go to <strong>Settings → Account → Sign out</strong> (or
+    <strong>Delete account</strong>), then uninstall the app. Uninstalling removes all locally stored data, including your
     settings, rating and any items you own.
   </div>
 
@@ -71,10 +86,12 @@
           leaderboard entry</td>
     </tr>
     <tr>
-      <td>Account details stored on your device (including any Google name or
-          email used to sign in)</td>
-      <td><strong>Deleted</strong> when you sign out or uninstall. This data is
-          held only on your device and is never sent to our server.</td>
+      <td>Account details stored on your device (including any Google or, on
+          iPhone, Apple name or email used to sign in — or the Apple private
+          relay address if you chose "Hide My Email")</td>
+      <td><strong>Deleted</strong> when you delete the account in the app, sign
+          out or uninstall. This data is held only on your device and is never
+          sent to our server.</td>
     </tr>
     <tr>
       <td>Moves played in online games</td>
@@ -92,16 +109,24 @@
           Firebase) against your device's advertising ID and an app-instance
           ID — not against your username, name or email address, so it cannot
           be looked up from an account. Resetting or deleting the advertising
-          ID in Android (<em>Settings → Privacy → Ads</em>) and uninstalling
+          ID in Android (<em>Settings → Privacy → Ads</em>), or on iPhone
+          turning off tracking for the app (<em>Settings → Privacy &amp;
+          Security → Tracking</em>; the iPhone version reads the advertising
+          identifier only if you allowed tracking), and uninstalling
           the app separates anything collected later from it. Analytics events
           are deleted automatically after 2 to 14 months depending on our Google Analytics setting.</td>
     </tr>
     <tr>
       <td>Purchase records</td>
-      <td><strong>Kept by Google Play</strong>, not by us. We never receive or
+      <td><strong>Kept by Google Play</strong> (Android) or <strong>by Apple /
+          the App Store</strong> (iPhone), not by us. We never receive or
           store payment details. Purchase history is governed by
           <a href="https://policies.google.com/privacy">Google's Privacy
-          Policy</a> and by tax and accounting requirements.</td>
+          Policy</a> or <a href="https://www.apple.com/legal/privacy/">Apple's
+          Privacy Policy</a> and by tax and accounting requirements. On iPhone
+          the Neural Coach subscription is managed or cancelled in
+          <em>iOS Settings → Subscriptions</em>; deleting your account does not
+          cancel it.</td>
     </tr>
   </table>
 

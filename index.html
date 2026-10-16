@@ -19,12 +19,19 @@
 </head>
 <body>
   <h1>Privacy Policy — Adaptive Chess</h1>
-  <p class="muted">Last updated: 3 October 2026 (applies from version 1.2.0)</p>
+  <p class="muted">Effective from 3 October 2026 (applies from version 1.2.0).
+    Last updated: 15 October 2026.</p>
 
   <p>
     Adaptive Chess ("the app", package
     <code>com.ahmadessam.adaptivechess</code>) is developed by Ahmad Essam.
     This policy explains what data the app handles.
+  </p>
+
+  <p>
+    This policy covers both the <strong>Android</strong> version (Google Play)
+    and the <strong>iPhone</strong> version (App Store) of the app. They are
+    the same game; where the two platforms differ, the text says so.
   </p>
 
   <p>
@@ -44,7 +51,9 @@
     collects and sends to Google:
   </p>
   <ul>
-    <li>your device's <strong>advertising ID</strong>;</li>
+    <li>your device's <strong>advertising ID</strong> (Android: the Google
+      advertising ID; iPhone: the IDFA, and only if you allow tracking — see
+      below);</li>
     <li>your <strong>IP address</strong>, from which an approximate location
       (country / region / city) is derived;</li>
     <li>device and app information (model, operating system version, language,
@@ -65,8 +74,22 @@
     in the app (the entry is shown where a choice applies).
   </p>
   <p>
-    <strong>Your controls.</strong> You can reset or delete your advertising ID
-    in Android under <em>Settings → Privacy → Ads</em>. Buying
+    <strong>On iPhone (App Tracking Transparency).</strong> After the consent
+    form (where it applies), the iPhone version shows Apple's "Allow tracking?"
+    prompt once. If you decline, ads are still shown but are not personalised
+    and the app does not read your advertising identifier (IDFA). Google's
+    SKAdNetwork is used to attribute ad installs in a way that does not
+    identify you. You can change your choice later in iOS under
+    <em>Settings → Privacy &amp; Security → Tracking</em>. The iPhone version
+    does not use the Android advertising-ID permission described in the
+    Android-specific paragraph below.
+  </p>
+  <p>
+    <strong>Your controls.</strong> On Android you can reset or delete your
+    advertising ID under <em>Settings → Privacy → Ads</em> (the Android app
+    requests the <code>AD_ID</code> permission to read it; this is
+    Android-specific). On iPhone use <em>Settings → Privacy &amp; Security →
+    Tracking</em> as described above. Buying
     <em>Remove Ads</em> or holding an active Neural Coach subscription turns
     off the banner and the between-game ads; the advertising SDK stays in the
     app so that the optional rewarded ads keep working, and it may still
@@ -87,7 +110,8 @@
     app-instance ID, the advertising ID, device and operating-system
     information, and your approximate location (country level, from the IP
     address). These events do not contain your name, email address, username
-    or the moves you play. See
+    or the moves you play. The iPhone version sends the same events; on iPhone
+    the Firebase SDK does not collect the advertising identifier (IDFA). See
     <a href="https://firebase.google.com/support/privacy">Privacy and Security
     in Firebase</a>.
   </p>
@@ -95,13 +119,23 @@
   <h2>Data collected only if you sign in and play online</h2>
   <p>
     An account is optional. It is asked for only when you open Online Play or
-    start a Neural Coach subscription.
+    start a Neural Coach subscription. You can create an account with a
+    username and password, or sign in with Google; the iPhone version also
+    offers <strong>Sign in with Apple</strong>.
   </p>
   <table>
     <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
     <tr>
       <td>Google account ID, name and email address</td>
       <td>To identify you when you sign in with Google</td>
+      <td>Stored on your device only</td>
+    </tr>
+    <tr>
+      <td>Apple user ID, name and email address (iPhone only; if you choose
+          "Hide My Email", Apple gives us a private relay address instead of
+          your real one)</td>
+      <td>To identify you when you sign in with Apple and to show your
+          username</td>
       <td>Stored on your device only</td>
     </tr>
     <tr>
@@ -127,8 +161,11 @@
   </table>
 
   <p>
-    Your email address is <strong>not</strong> sent to our game server and is
-    not shared with other players. Other players only ever see your username,
+    Your email address (including any Apple private relay address) and name
+    are <strong>not</strong> sent to our game server and are not shared with
+    other players. Whichever sign-in method you use, the only account data
+    that leaves your device is your chosen username and your rating, for
+    online play. Other players only ever see your username,
     rating and chosen piece skin. A practice match against the bot, offered
     when no online opponent is found, is played entirely on your device:
     nothing about it is sent to the game server and it does not change your
@@ -161,20 +198,26 @@
     items you own, your daily-puzzle results and streak, counters used to
     decide when an ad or the rating prompt may appear, your reminder
     preference, your guest name for friend games and your same-phone board
-    preference, and (if you signed in) your account details. If you create
-    an account with a username and password instead of Google, the password is
-    kept only on your device, in scrambled (hashed) form, and is never sent to
-    us. All of this is removed when you uninstall the app.
+    preference, and (if you signed in) your account details (including the
+    name and email address received from Google or, on iPhone, from Apple).
+    If you create an account with a username and password instead of Google
+    or Apple, the password is kept only on your device, in scrambled (hashed)
+    form, and is never sent to us. On iPhone the rating prompt is Apple's own
+    review request sheet, which collects nothing for us; the app only keeps
+    the local counter that decides when it may be shown. All of this is
+    removed when you uninstall the app.
   </p>
 
   <h2>Notifications</h2>
   <p>
     After you solve your first daily puzzle the app offers a daily reminder.
-    If you accept, Android asks for permission to show notifications. The
+    If you accept, Android or iOS asks for permission to show notifications
+    (the permission is requested only when the reminder is first used). The
     reminders are scheduled <strong>on your device</strong>; the app does not
     use a push-notification service and no notification token or identifier is
     sent to us or to anyone else. You can turn the reminder off in the app's
-    Settings or in Android's notification settings.
+    Settings, in Android's notification settings, or on iPhone under
+    <em>iOS Settings → Notifications</em>.
   </p>
 
   <h2>Who we share data with</h2>
@@ -188,8 +231,13 @@
       <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
     <li><strong>Google Analytics for Firebase</strong> — usage analytics
       (app-instance ID, advertising ID, usage events, device information).</li>
-    <li><strong>Google Play</strong> — processes purchases and, if you use it,
-      Google Sign-In.</li>
+    <li><strong>Google Play</strong> (Android) — processes purchases and, if you
+      use it, Google Sign-In. On iPhone, Google Sign-In (if you use it) is
+      still provided by Google.</li>
+    <li><strong>Apple</strong> (iPhone) — the App Store processes purchases
+      (Apple In-App Purchase) and, if you use it, Sign in with Apple. See
+      <a href="https://www.apple.com/legal/privacy/">Apple's Privacy
+      Policy</a>.</li>
     <li><strong>Fly.io</strong> — hosts our online game server. See
       <a href="https://fly.io/legal/privacy-policy/">Fly.io's Privacy Policy</a>.</li>
   </ul>
@@ -205,16 +253,24 @@
     automatically.
   </p>
 
-  <!-- id is referenced by the Play Console "account deletion URL" field -->
+  <!-- id is referenced by the Play Console "account deletion URL" field and
+       by the App Store Connect account-deletion URL -->
   <h2 id="delete-account">Deleting your account and data</h2>
   <p>
-    You can sign out and delete your local account at any time from
-    <em>Settings → Account</em> in the app. To have your username and rating
-    permanently erased from our game server, email
+    You can sign out and delete your account at any time from
+    <em>Settings → Account → Delete account</em> in the app, on both Android
+    and iPhone. Since 15 October 2026, <em>Delete account</em> removes the
+    account from your device <strong>and</strong> asks our game server to
+    delete your username and rating from the public leaderboard. If the
+    server cannot be reached at that moment, the local deletion still
+    completes and the app tells you; in that case use our
+    <a href="./delete-account.html">account deletion page</a> or email
     <a href="mailto:ahmadessam1997@gmail.com">ahmadessam1997@gmail.com</a>
-    from the address associated with your account and we will delete them
-    within 30 days. Uninstalling the app removes all locally stored data.
-    Resetting or deleting your advertising ID in Android's settings separates
+    from the address associated with your account and we will delete your
+    username and rating within 30 days. Uninstalling the app removes all
+    locally stored data.
+    Resetting or deleting your advertising ID in Android's settings, or
+    turning off tracking for the app in iOS settings, separates
     future advertising and analytics data from what was collected before.
     Analytics events are not linked to your name, email address or username;
     they expire automatically as described above, and you can email us at the
@@ -225,8 +281,14 @@
   <h2>Purchases</h2>
   <p>
     Optional in-app purchases (the Neural Coach subscription, Remove Ads and
-    cosmetic skins) are processed by Google Play. We do not receive or store
-    your payment details; those are handled entirely by Google.
+    cosmetic skins) are processed by Google Play on Android and by the App
+    Store (Apple In-App Purchase) on iPhone. We do not receive or store
+    your payment details; those are handled entirely by Google or Apple.
+    On iPhone, purchases are tied to your Apple Account, the Neural Coach
+    subscription is an App Store auto-renewable subscription that you manage
+    or cancel in <em>iOS Settings → Subscriptions</em>, and
+    <em>Restore purchases</em> in the app's store restores items bought with
+    the same Apple Account.
   </p>
 
   <h2>Children</h2>
@@ -239,9 +301,9 @@
 
   <h2>Changes</h2>
   <p>
-    If a future version changes what data is collected, this policy and the
-    app's Play Store data-safety section will be updated before that version
-    is released.
+    If a future version changes what data is collected, this policy, the
+    app's Play Store data-safety section and its App Store privacy details
+    will be updated before that version is released.
   </p>
 
   <h2>Contact</h2>
